@@ -12,7 +12,7 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
 
 	@Override
 	public void registerStompEndpoints(StompEndpointRegistry registry) {
-		registry.addEndpoint("/hello").withSockJS();
+		registry.addEndpoint("/webChat").withSockJS();
 	}
 
 	@Override
@@ -20,5 +20,4 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
 		config.enableSimpleBroker("/topic");
 		config.setApplicationDestinationPrefixes("/app");
 	}
-
 }
