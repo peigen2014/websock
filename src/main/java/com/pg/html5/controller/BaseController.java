@@ -18,9 +18,10 @@ public class BaseController {
 		Thread.sleep(3000); // simulated delay
 		return new Greeting("Hello, " + message.getName() + "!");
 	}
-	 @RequestMapping("/index")
-	    public String sayHello(Model model) {
-	        model.addAttribute("message", "こんにちは世界aaa");
-	        return "index";
-	    }
+
+	@RequestMapping("/index")
+	public String sayHello(Model model) {
+		model.addAttribute("message", "こんにちは世界aaa");
+		return "index";
+	}
 }
