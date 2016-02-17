@@ -11,5 +11,5 @@ public class BaseController {
 		model.addAttribute("message", "hello world");
 		return "index";
 	}
-
+	
 }
